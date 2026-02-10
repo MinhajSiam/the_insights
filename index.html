@@ -1238,7 +1238,7 @@
                                                     <span
                                                         class="panel d-inline-block bg-primary w-8px h-8px translate-y-px"></span>
                                                     <span
-                                                        class="text-uppercase m-0 fw-bold text-black dark:text-white">স্টার
+                                                        class="text-uppercase m-0 fw-bold text-black dark:text-white">ইনসাইটস
                                                         বিশেষ </span>
                                                 </h2>
                                             </div>
@@ -3289,7 +3289,7 @@
                                                                     class="text-none text-white fw-bold"
                                                                     href="https://insightsnews.tv/entertainment/2879/bollywood-superstar-aamir-khan-at-arijit-singhs-murshidabad-house.html">
                                                                     অরিজিৎ সিংয়ের মুর্শিদাবাদের বাড়িতে বলিউড
-                                                                    সুপারস্টার আমির খান </a>
+                                                                    সুপারইনসাইটস আমির খান </a>
                                                             </h3>
                                                             <div
                                                                 class="post-meta panel hstack justify-start gap-1 fs-7 fw-medium text-gray-900 dark:text-white text-opacity-60 d-none md:d-flex z-1">
@@ -5452,7 +5452,7 @@
                             messageBox
                                 .removeClass('text-danger')
                                 .addClass('text-success')
-                                .text('ধন্যবাদ! আপনি এখন স্টার নিউজ পরিবারের সদস্য।');
+                                .text('ধন্যবাদ! আপনি এখন ইনসাইটস নিউজ পরিবারের সদস্য।');
 
                             $form.find('.phone-input').val('');
 
@@ -5466,7 +5466,7 @@
                             const errors = xhr.responseJSON.errors;
                             if (errors?.phone_number) {
                                 const msg = errors.phone_number.find(m => m.includes('unique'))
-                                    ? 'আপনার নাম্বার স্টার পরিবারে অন্তর্ভুক্ত আছে।'
+                                    ? 'আপনার নাম্বার ইনসাইটস নিউজ পরিবারে অন্তর্ভুক্ত আছে।'
                                     : errors.phone_number[0];
 
                                 messageBox
@@ -5507,26 +5507,6 @@
 
         });
     </script>
-
-    <!-- Google tag (GA4) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SKDG368Y47"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-SKDG368Y47', {
-            cookie_domain: 'insightsnews.tv',
-            cookie_flags: 'SameSite=None;Secure',
-            send_page_view: true
-        });
-
-    </script>
-
-
-
-
 
 </body>
 
