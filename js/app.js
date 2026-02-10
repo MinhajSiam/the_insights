@@ -18,13 +18,13 @@
 }
 document.querySelectorAll(".uc-horizontal-scroll").forEach((e => {
     e.addEventListener("wheel", (t => {
-        t.preventDefault(), e.scrollBy({left: t.deltaY, behavior: "smooth"})
+        t.preventDefault(), e.scrollBy({ left: t.deltaY, behavior: "smooth" })
     }))
 })), document.addEventListener("DOMContentLoaded", (() => {
     const e = document.querySelector("[data-uc-backtotop]");
     if (!e) return;
     e.addEventListener("click", (e => {
-        e.preventDefault(), window.scrollTo({top: 0, behavior: "smooth"})
+        e.preventDefault(), window.scrollTo({ top: 0, behavior: "smooth" })
     }));
     let t = 0;
     window.addEventListener("scroll", (() => {

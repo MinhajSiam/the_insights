@@ -1,5 +1,5 @@
 let ENABLE_PAGE_PRELOADER = !0, DEFAULT_DARK_MODE = !1, USE_LOCAL_STORAGE = !0, USE_SYSTEM_PREFERENCES = !1,
-    DEFAULT_BREAKPOINTS = {xs: 0, sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400};
+    DEFAULT_BREAKPOINTS = { xs: 0, sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400 };
 document.addEventListener("DOMContentLoaded", (() => {
     html.classList.add("dom-ready")
 }));
@@ -14,8 +14,8 @@ Object.entries(DEFAULT_BREAKPOINTS).forEach((([e, t]) => {
     setupBp(e, t, "min"), setupBp(e, t - 1, "max")
 }));
 const isDarkMode = () => html.classList.contains("uc-dark"), setDarkMode = e => {
-        e = !!e, isDarkMode() !== e && (html.classList.toggle("uc-dark", e), window.dispatchEvent(new CustomEvent("darkmodechange")))
-    },
+    e = !!e, isDarkMode() !== e && (html.classList.toggle("uc-dark", e), window.dispatchEvent(new CustomEvent("darkmodechange")))
+},
     getInitialDarkMode = () => USE_LOCAL_STORAGE && null !== localStorage.getItem("darkMode") ? "1" === localStorage.getItem("darkMode") : USE_SYSTEM_PREFERENCES ? matchMedia("(prefers-color-scheme: dark)").matches : DEFAULT_DARK_MODE;
 setDarkMode(getInitialDarkMode());
 const dark = new URLSearchParams(location.search).get("dark");
